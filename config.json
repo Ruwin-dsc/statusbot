@@ -1,0 +1,6 @@
+{
+    "token": "LA BAH TU METS LE TOKEN",
+    "bot": ["IdBot1", "idBot2", "etc..."],
+    "temps": "METTRE LE TEMPS EN MS (conseil 10000",
+    "channelId": "ET ICI TU MET LE CHANNELID OU LE MESSAGE SERA ENVOYER"
+}
