@@ -10,7 +10,7 @@ const config = require("../../config.json")
 module.exports = {
   name: "ready",
   async execute(bot) {
-    let newBots = "", msg
+    let newBots = "", msg, save = []
     console.log(`
     ///////////////////////////////////////////////////////////////////////
     ///                                                                 ///
@@ -25,10 +25,13 @@ bot.guilds.cache.forEach(async (guild) => {
         const member = guild.members.cache.get(user.id)
         if(!member) return
         if(config.bot.includes(member.id)) {
+        if(save.includes(member.id)) return
         if(member.presence?.status === 'online' || member.presence?.status === 'idle' || member.presence?.status === 'dnd' ) {
             newBots += `${member} : 🟢\n`
+            save.push(member.id)
         } else {
             newBots += `${member} : 🔴\n`
+            save.push(member.id)
         } 
             
         }
@@ -42,6 +45,7 @@ bot.guilds.cache.forEach(async (guild) => {
         const salon = bot.channels.cache.get(config.channelId)
         if(!salon) return console.log(`Salon invalide !`)
         newBots = ""
+        save = []
         if(!msg) {
             msg = await salon.send({ embeds: [embedStatut] })
         } else {
