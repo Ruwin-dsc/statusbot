@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////
 ///                                                                 ///
-///   https://discord.gg/3rThTcUHZr for support codded by ruwinou   ///
+///   https://discord.gg/xkebY6nsxk for support codded by ruwinou   ///
 ///                                                                 ///
 ///////////////////////////////////////////////////////////////////////
 
@@ -14,7 +14,7 @@ module.exports = {
     console.log(`
     ///////////////////////////////////////////////////////////////////////
     ///                                                                 ///
-    ///   https://discord.gg/3rThTcUHZr for support codded by ruwinou   ///
+    ///   https://discord.gg/xkebY6nsxk for support codded by ruwinou   ///
     ///                                                                 ///
     ///////////////////////////////////////////////////////////////////////
     `)
@@ -58,6 +58,6 @@ bot.guilds.cache.forEach(async (guild) => {
 
 ///////////////////////////////////////////////////////////////////////
 ///                                                                 ///
-///   https://discord.gg/3rThTcUHZr for support codded by ruwinou   ///
-///                                                                 ///
+///   https://discord.gg/xkebY6nsxk for support codded by ruwinou   ///
+///                                                               ///
 ///////////////////////////////////////////////////////////////////////
