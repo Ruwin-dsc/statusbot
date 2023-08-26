@@ -37,7 +37,7 @@ bot.guilds.cache.forEach(async (guild) => {
         }
     })
 })
-        const timerefresh = Date.now() + Number(config.temps)
+        const timerefresh = Date.now() + Number(config.temps) * 3
         const embedStatut = new Discord.EmbedBuilder()
         .setDescription(`${newBots}\nProchain refresh dans: <t:${Math.floor(timerefresh / 1000)}:R>`)
         .setFooter({ text: `©️ Powered by WhiteHall (ruwinou)` })
